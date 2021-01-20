@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="won-mssg"></div>
+    <div class="main-content">
+      <div class="left-side">
+        <h2>Player 1</h2>
+        <h1 class="score" id="score1Pl">0</h1>
+        <div class="smallest-rectangle">
+          <h4 class="current-txt">current</h4>
+          <h3 id="player1CurrPoints" class="current-points-left">0</h3>
+        </div>
+      </div>
+
+      <div class="right-side non-selected">
+        <h2>Player 2</h2>
+        <h1 class="score" id="score2Pl">0</h1>
+        <div class="smallest-rectangle">
+          <h4 class="current-txt">current</h4>
+          <h3 id="player2CurrPoints" class="current-points-left">0</h3>
+        </div>
+      </div>
+    </div>
+    <div class="screen-icons">
+      <button id="newGameBttn" class="bttn">🔁 New Game</button>
+      <div class="dice diceHidder" id="diceHolder">
+        <div id="dice1" class="hidden"></div>
+        <div id="dice2" class="hidden">
+          <div class="circles"></div>
+          <div class="circles"></div>
+        </div>
+        <div id="dice3" class="hidden">
+          <div class="circles"></div>
+          <div class="circles"></div>
+          <div class="circles"></div>
+        </div>
+        <div id="dice4" class="hidden">
+          <div class="four-left">
+            <div class="circles"></div>
+            <div class="circles"></div>
+          </div>
+          <div class="four-right">
+            <div class="circles"></div>
+            <div class="circles"></div>
+          </div>
+        </div>
+        <div id="dice5" class="hidden">
+          <div class="four-left">
+            <div class="circles"></div>
+            <div class="circles"></div>
+          </div>
+          <div class="four-right">
+            <div class="circles"></div>
+            <div class="circles"></div>
+          </div>
+          <div class="circles" id="five-mid"></div>
+        </div>
+        <div id="dice6" class="hidden">
+          <div class="three-left">
+            <div class="circles"></div>
+            <div class="circles"></div>
+            <div class="circles"></div>
+          </div>
+          <div class="three-right">
+            <div class="circles"></div>
+            <div class="circles"></div>
+            <div class="circles"></div>
+          </div>
+        </div>
+      </div>
+      <button id="rollDiceBttn" class="bttn">🎲 Roll Dice</button>
+      <button id="holdBttn" class="bttn">📥 Hold</button>
+    </div>
+    <script src="/javascript/script.js"></script>
+  </body>
+</html>
