@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+}
+
+.main-content {
+  position: relative;
+  min-width: 70%;
+  min-height: 80%;
+  height: 70vh;
+  width: 70vh;
+  margin: 120px auto;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.left-side {
+  color: #c7365f;
+  padding: 15px;
+  width: 50%;
+  background-color: #2f2f2f;
+  /* border-radius: 30px; */
+  border-radius: inherit;
+}
+.left-side h2,
+h1 {
+  margin-top: 10%;
+}
+.smallest-rectangle {
+  color: white;
+  background-color: #c7365f;
+  width: 35%;
+  height: 130px;
+  align-items: center;
+  display: block;
+  justify-content: space-around;
+  text-align: center;
+  margin: 30% auto 0 auto;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.smallest-rectangle h4 {
+  margin-top: 10%;
+}
+
+.right-side {
+  color: #c7365f;
+
+  padding: 15px;
+  width: 50%;
+  background-color: #eec0c4;
+  /* border-radius: 30px; */
+  border-radius: inherit;
+}
+.right-side h2,
+h1 {
+  margin-top: 10%;
+}
+
+.screen-icons {
+  height: 70vh;
+  width: 30vh;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bttn {
+  display: block;
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 25% auto 0 auto;
+  border: none;
+}
+#rollDiceBttn {
+  margin-top: 70px !important;
+}
+#holdBttn {
+  margin-top: 10px !important;
+}
+
+.current-txt {
+  font-size: 20px;
+  margin-top: 27px !important;
+}
+
+.current-points-left {
+  font-size: 30px;
+}
+
+.dice {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px auto;
+  position: relative;
+}
+
+#dice1 {
+  border-radius: 50%;
+  background-color: #c7365f;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.circles {
+  border-radius: 50%;
+  background-color: #c7365f;
+  width: 30px;
+  height: 30px;
+}
+
+#dice2 {
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#dice2 div:last-child {
+  margin-top: 20px;
+}
+
+#dice3 {
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#dice3 div {
+  margin: 5px;
+}
+
+#dice4 {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#dice4 div {
+  margin: 40px 10px;
+}
+
+#dice5 {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#dice5 div {
+  margin: 40px 10px;
+}
+
+#five-mid {
+  position: absolute;
+  text-align: center !important;
+  top: 35% !important;
+  left: 42% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+#dice6 {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#dice6 div > div {
+  margin: 10px;
+}
+
+.diceHidder {
+  opacity: 0;
+}
+
+.won-mssg {
+  text-align: center;
+  color: white;
+  width: 80%;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  margin: 80px auto 0 auto;
+}
+
+.non-selected {
+  opacity: 0.6;
+}
+
+.have-a-winner {
+  display: none;
+}
